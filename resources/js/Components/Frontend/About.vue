@@ -34,7 +34,7 @@ const cardTransform = computed(() => {
             v-motion
             :initial="{
                 opacity: 0,
-                y: 10,
+                y: 100,
             }"
             :visible="{
                 opacity: 1,
