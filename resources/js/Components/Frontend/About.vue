@@ -28,22 +28,17 @@ const cardTransform = computed(() => {
 <template>
     <section
         id="about"
-        class="bg-light-primary dark:bg-dark-primary overflow-hidden pt-12 pb-12 lg:pt-[120px] lg:pb-[90px]"
+        class="bg-light-primary dark:bg-dark-primary overflow-hidden pt-12 pb-12 lg:pt-[90px] lg:pb-[90px]"
     >
         <div
             v-motion
             :initial="{
                 opacity: 0,
-                y: 100,
+                y: 10,
             }"
             :visible="{
                 opacity: 1,
                 y: 0,
-                transition: {
-                    type: 'spring',
-                    stiffness: '100',
-                    delay: 100,
-                },
             }"
             class="container mx-auto"
         >

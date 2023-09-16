@@ -42,11 +42,6 @@ const submit = () => {
             :visible="{
                 opacity: 1,
                 y: 0,
-                transition: {
-                    type: 'spring',
-                    stiffness: '100',
-                    delay: 100,
-                },
             }"
             class="container mx-auto"
         >

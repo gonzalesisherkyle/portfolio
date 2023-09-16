@@ -34,11 +34,6 @@ const cardTransform = computed(() => {
         :enter="{
             opacity: 1,
             y: 0,
-            transition: {
-                type: 'spring',
-                stiffness: '100',
-                delay: 100,
-            },
         }"
         class="relative bg-light-primary dark:bg-dark-primary pt-[110px] pb-[110px] lg:pt-[150px]"
         id="home"
