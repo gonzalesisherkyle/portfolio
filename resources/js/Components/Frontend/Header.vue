@@ -87,7 +87,7 @@ const navigations = [
                 />
                 <span
                     class="self-center text-2xl font-semibold whitespace-nowrap text-dark-primary dark:text-light-primary"
-                    >I S H E R</span
+                    >ISHER</span
                 >
             </a>
             <div class="grid place-content-center">
