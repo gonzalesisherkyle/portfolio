@@ -1,6 +1,10 @@
 <script setup>
 import { ref } from "vue";
 const showMobileMenu = ref("false");
+import { useDark, useToggle } from "@vueuse/core";
+
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 
 const navigations = [
     { name: "Home", href: "#home" },
@@ -9,7 +13,65 @@ const navigations = [
     { name: "Contact", href: "#contact" },
 ];
 </script>
+<style scoped>
+@keyframes sway {
+    0% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
 
+.LightSwitch {
+    position: fixed;
+    top: -60px;
+    border: none;
+    background-color: transparent;
+    transform-origin: top;
+    transform: rotate(1deg);
+    animation-name: sway;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+}
+
+.LightSwitch:active {
+    top: -5px;
+    transition: 0.2s;
+}
+
+.LightSwitch:hover {
+    cursor: pointer;
+}
+
+.LightRope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Bead {
+    height: 12px;
+    width: 12px;
+    background-color: #32373b;
+    border-radius: 50%;
+    display: block;
+}
+
+.Bob {
+    border-bottom: 40px solid #cc8800;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 15px;
+    border-radius: 50px 50px 50px 50px;
+}
+</style>
 <template>
     <nav
         class="bg-light-primary dark:bg-dark-primary border-gray-200 fixed w-full z-20 top-0 left-0"
@@ -28,6 +90,32 @@ const navigations = [
                     >I S H E R</span
                 >
             </a>
+            <div class="grid place-content-center">
+                <button
+                    content="night"
+                    class="LightSwitch"
+                    @click="toggleDark()"
+                >
+                    <div class="LightRope">
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bead"></span>
+                        <span class="Bob"></span>
+                    </div>
+                </button>
+            </div>
             <button
                 @click="showMobileMenu = !showMobileMenu"
                 data-collapse-toggle="navbar-sticky"
