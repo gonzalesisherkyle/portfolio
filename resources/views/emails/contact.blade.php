@@ -7,6 +7,6 @@
     <h1>{{ $name }}</h1>
     <p>{{ $body }}</p>
      
-    <p>Thank you</p>
+    <p>{{ $email }}</p>
 </body>
 </html>
