@@ -81,7 +81,7 @@ const cardTransform = computed(() => {
                                     target="_blank"
                                 >
                                     <img
-                                        src="../../../../public/storage/images/social-icons/facebook.svg"
+                                        src="/storage/images/social-icons/facebook.svg"
                                         alt="facebook"
                                         class="h-20"
                                     />
@@ -93,7 +93,7 @@ const cardTransform = computed(() => {
                                     target="_blank"
                                 >
                                     <img
-                                        src="../../../../public/storage/images/social-icons/linkedin.svg"
+                                        src="/storage/images/social-icons/linkedin.svg"
                                         alt="linedin"
                                         class="h-20"
                                     />
@@ -105,7 +105,7 @@ const cardTransform = computed(() => {
                                     target="_blank"
                                 >
                                     <img
-                                        src="../../../../public/storage/images/social-icons/github.svg"
+                                        src="/storage/images/social-icons/github.svg"
                                         alt="github"
                                         class="h-20"
                                     />
@@ -127,7 +127,7 @@ const cardTransform = computed(() => {
                                 }"
                             >
                                 <img
-                                    src="../../../../public/storage/images/UI-UX.png"
+                                    src="/storage/images/UI-UX.png"
                                     alt="hero"
                                     class="max-w-full lg:ml-auto"
                                 />

@@ -48,14 +48,14 @@ const cardTransform = computed(() => {
                         <div class="w-full px-3 sm:px-4 xl:w-1/2">
                             <div class="py-3 sm:py-4">
                                 <img
-                                    src="../../../../public/storage/images/1.jpg"
+                                    src="/storage/images/1.jpg"
                                     alt=""
                                     class="w-full rounded-2xl"
                                 />
                             </div>
                             <div class="py-3 sm:py-4">
                                 <img
-                                    src="../../../../public/storage/images/2.jpg"
+                                    src="/storage/images/2.jpg"
                                     alt=""
                                     class="w-full rounded-2xl"
                                 />
@@ -64,7 +64,7 @@ const cardTransform = computed(() => {
                         <div class="w-full px-3 sm:px-4 xl:w-1/2">
                             <div class="relative z-10 my-4">
                                 <img
-                                    src="../../../../public/storage/images/3.jpg"
+                                    src="/storage/images/3.jpg"
                                     alt=""
                                     class="w-full rounded-2xl"
                                 />
