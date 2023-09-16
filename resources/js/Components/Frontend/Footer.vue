@@ -9,7 +9,7 @@
                 <div class="flex space-x-6 items-center justify-between">
                     <img
                         class="h-14 w-auto"
-                        src="../../../../public/storage/images/ig-logo.png"
+                        src="/storage/images/ig-logo.png"
                         alt="my-logo"
                     />
                 </div>

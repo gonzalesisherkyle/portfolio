@@ -19,7 +19,7 @@ const navigations = [
         >
             <a href="/" class="flex items-center">
                 <img
-                    src="../../../../public/storage/images/ig-logo.png"
+                    src="/storage/images/ig-logo.png"
                     class="h-14 mr-3"
                     alt="Flowbite Logo"
                 />
